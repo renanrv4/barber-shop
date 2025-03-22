@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ClientsService {
 
-  private readonly basePath = 'http://localhost:8080/';
+  private readonly basePath = 'http://localhost:1080/';
 
   constructor(private http: HttpClient) { }
 
