@@ -30,12 +30,12 @@ export class EditClientComponent implements OnInit, OnDestroy{
   private httpsubscriptions: Subscription[] = []
   client: ClientModelForm = { id: 0, name: '', email: '', phone: '' }
  
-   constructor(
-     @Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: IClientsService,
-     @Inject(SERVICES_TOKEN.SNACKBAR) private readonly snackBarManager: ISnackbarManagerService,
-     private readonly activatedRoute: ActivatedRoute,
-     private readonly router: Router
-   ) { }
+  constructor(
+    @Inject(SERVICES_TOKEN.HTTP.CLIENT) private readonly httpService: IClientsService,
+    @Inject(SERVICES_TOKEN.SNACKBAR) private readonly snackBarManager: ISnackbarManagerService,
+    private readonly activatedRoute: ActivatedRoute,
+    private readonly router: Router
+  ) { }
  
  
   ngOnInit(): void {
